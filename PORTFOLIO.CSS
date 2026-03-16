@@ -1,0 +1,251 @@
+body{
+background: #0f172a;
+}
+.navbar-brand{
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(-20px) scale(0.8);
+  animation: logoEntrance 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes logoEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.8) rotate(-8deg);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(5px) scale(1.05) rotate(3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0);
+  }
+}
+
+
+
+
+#container-5{
+	background: #1e293b;
+	color: white;
+	position: fixed;
+	top: 0px;
+}
+
+.navbar-toggler{
+	color: aqua;
+}
+#show{
+	color: aqua;
+}
+.home{
+	margin-left:130%;
+}
+
+.title{
+color: white;
+
+}
+.title-1{
+	margin-top: 60px;
+	height: 40vh;
+
+	  animation-name: logomove;
+	   animation-duration: 40s;
+      animation-iteration-count: 1;
+	  position: relative;
+	
+}
+  @keyframes logomove{
+  00%{
+                left: 0px;
+                top: 0px;
+                padding-left: 0px;
+                padding-top: 0px;
+               
+            } 
+            10%{
+                left: 350px;
+                top:0px;
+                padding-left: 0px;
+                padding-top: 0px;
+              
+                    
+            }
+          
+		 
+
+}
+.nav-link,a{
+	
+	color: white;
+}#box-5{
+	font-size: 100%;
+	color: aquamarine;
+}
+
+#box-1{
+	font-size: 200%;
+}
+#box-2{
+	font-size: 100%;
+}
+#a{
+	height: 70px;
+	width: 140px;
+	font-size: 100%;
+	background-color: aquamarine;
+	border-radius: 15px;
+	outline: none;
+	border: none;
+
+}
+#b{
+	height: 70px;
+	width: 170px;
+	font-size: 100%;
+	background: rgb(0,0,102);
+	color: purple;
+	margin-left: 15px;
+	border-radius: 15px;
+}
+.skills{
+
+	
+	margin-top: 90px;
+	background: #1e293b;
+	color: white;
+
+}
+.skill-1{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 10px;
+
+}
+
+@media(max-width:600px)
+{
+	.skill-1{
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+	grid-gap: 10px;
+
+}
+}
+
+@media(min-width:601px) and (max-width:1000px)
+{
+	.skill-1{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 10px;
+
+}
+}
+
+
+
+
+.skil-item{
+
+	height: 130px;
+	
+												
+	
+	
+
+	background: #0f172a;
+	border-radius: 10px;
+font-size:100%;
+		
+	box-shadow: 5px 5px 10px rgb(#0f172a);
+}
+.skil-item:hover{
+	transform: translateY(-8px);
+	box-shadow: 5px 5px 10px rgb(0,0,0);
+}
+
+
+
+#pro{
+	font-size: 300%;
+	
+}
+
+.project{
+	color: white;
+	margin-top: 100px;
+	position: static;
+
+}
+#p{
+	font-size: 20px;
+}
+
+.project-2{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+
+@media(max-width:600px)
+{
+	.project-2{
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+	grid-gap: 10px;
+
+}
+}
+
+
+
+.project-1{
+
+	height: 450px;
+
+
+	margin-top: 20px;
+	margin-left: 20px;
+	background: #1e293b;
+		border-radius: 20px;
+}
+
+#ab{
+	height: 50px;
+	width: 80px;
+	background-color: aqua;
+	margin-left: 10px;
+	border-radius: 10px;
+	border: none;
+	outline: none
+
+}
+#ab-1{
+	height: 50px;
+	width: 80px;
+	margin-left: 10px;
+	border-radius: 10px;
+		
+	border: none;
+	outline: none
+
+}
+#m{
+	border-radius: 20px;
+
+}
+
+.box{
+	display: inline-block;
+	position: relative;
+}
+
+}
+
+
+

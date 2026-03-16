@@ -1,0 +1,85 @@
+body{
+	margin: 0;
+	font-family: Arial;
+}
+
+.navbar{
+	background: #1e293b;
+	color: white;
+	padding: 15px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+position: fixed;
+	width: 100%;
+	top: 0px;
+}
+.logo{
+ opacity: 0;
+  transform: translateY(-20px) scale(0.8);
+  animation: logoEntrance 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes logoEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.8) rotate(-8deg);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(5px) scale(1.05) rotate(3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0);
+  }
+}
+
+
+.menu{
+	list-style: none;
+	display: flex;
+	gap:20px;
+
+	
+	
+}
+
+.menu a{
+	color: white;
+	text-decoration: none;
+}
+
+
+.toggle-btn{
+	font-size: 28px;
+	cursor: pointer;
+	display: none;
+}
+
+
+@media(max-width:768px){
+	.toggle-btn{
+		display: block;
+		
+	}
+	
+	.menu{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 40%;
+		background:#1e293b;
+		flex-direction: column;
+		display: none;
+	}
+	
+	.menu li{
+		border-bottom: 1px solid white;
+	}
+	
+	.menu.active{
+		display: flex;
+	}
+}
